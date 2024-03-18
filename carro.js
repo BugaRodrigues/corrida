@@ -4,8 +4,11 @@ window.onload = () => {
   const center = document.getElementById("center");
   const right = document.getElementById("right");
   let cordenadas = car.getBoundingClientRect().x;
-
   car.style.transition = "ease-out 1s";
+
+  setInterval(() => {
+    let ctrl
+  }, 10.000)
 
   onmousedown = () => {
     document.getElementById("text") ? document.getElementById("text").remove() : null;
@@ -40,4 +43,6 @@ window.onload = () => {
       cordenadas = car.getBoundingClientRect().x;
     }, 1500);
   };
+
+
 };
