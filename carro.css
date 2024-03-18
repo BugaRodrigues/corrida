@@ -35,6 +35,8 @@ p {
   }
 
   .road {
+    display: flex;
+    justify-content: center;
     background-image: url(image/rua.jpg);
     background-position: center;
     background-size: contain;
@@ -63,6 +65,16 @@ p {
 
   sumary {
     position: absolute;
+  }
+
+  #obstaculo {
+    height: 10%;
+    width: 50%;
+    background-image: url(image/obstaculo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    rotate: 90deg;
   }
 }
 
