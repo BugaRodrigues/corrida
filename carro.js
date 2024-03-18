@@ -12,8 +12,10 @@ window.onload = () => {
   };
 
   left.onmousedown = () => {
-    car.style.left = "25%";
+    car.style.left = "30%";
     car.style.transform = "translate(-25%)";
+    document.getElementById("pista").style.gridTemplateColumns = "2fr 1fr 1fr";
+    document.getElementById("pista").style.transition = "ease-out 1s"
     setTimeout(() => {
       cordenadas = car.getBoundingClientRect().x;
     }, 1500);
@@ -22,14 +24,18 @@ window.onload = () => {
   center.onmousedown = () => {
     car.style.left = "50%";
     car.style.transform = "translate(-50%)";
+    document.getElementById("pista").style.gridTemplateColumns = "1fr 2fr 1fr";
+    document.getElementById("pista").style.transition = "ease-out 1s"
     setTimeout(() => {
       cordenadas = car.getBoundingClientRect().x;
     }, 1500);
   };
 
   right.onmousedown = () => {
-    car.style.left = "75%";
+    car.style.left = "70%";
     car.style.transform = "translate(-75%)";
+    document.getElementById("pista").style.gridTemplateColumns = "1fr 1fr 2fr";
+    document.getElementById("pista").style.transition = "ease-out 1s"
     setTimeout(() => {
       cordenadas = car.getBoundingClientRect().x;
     }, 1500);
