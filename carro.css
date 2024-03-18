@@ -24,7 +24,6 @@ p {
   right: 10%;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1280px) {
   #pista {
     display: grid;
     height: 100%;
@@ -51,7 +50,6 @@ p {
     left: 50%;
     transform: translate(-50%);
   }
-}
 
 @keyframes mover {
   0% {
