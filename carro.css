@@ -37,7 +37,7 @@ p {
     background-image: url(image/rua.jpg);
     background-position: center;
     background-size: contain;
-    animation: mover infinite linear 1s;
+    animation: mover infinite linear 2s;
     &#left {
       border-left: 10px solid rgb(122, 122, 0);
     }
