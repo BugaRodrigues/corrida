@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
   justify-content: center;
   background-image: url(image/grama.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 p {
@@ -36,7 +37,13 @@ p {
     background-image: url(image/rua.jpg);
     background-position: center;
     background-size: contain;
-    animation: mover infinite linear 0s;
+    animation: mover infinite linear 1s;
+    &#left {
+      border-left: 10px solid rgb(122, 122, 0);
+    }
+    &#right {
+      border-right: 10px solid rgb(122, 122, 0);
+    }
   }
 
   #car {
@@ -47,9 +54,14 @@ p {
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
-    bottom: 0px;
+    bottom: 2.5%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 20px 10px black);
+  }
+
+  sumary {
+    position: absolute;
   }
 }
 
