@@ -20,7 +20,7 @@ p {
   position: absolute;
   font-size: 4em;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
   top: 5%;
   left: 10%;
   right: 10%;
@@ -41,6 +41,7 @@ p {
     background-position: center;
     background-size: contain;
     animation: mover infinite linear 1.5s;
+    filter: blur(100%);
     &#left {
       border-left: 10px solid rgb(122, 122, 0);
     }
